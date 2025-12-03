@@ -1,0 +1,38 @@
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 100vh;
+    
+  }
+  .mat-card-title {
+    padding-top: 30px !important;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+
+  }
+  .mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+  }
+  mat-card {
+    margin: 30px 100px;
+    box-shadow: none;
+    width: 500px;
+  }
+  .mat-button {
+    background-color: #E85F5B;
+    color: #fff !important;
+    width: auto;
+    cursor: pointer !important;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border: 1px solid #E85F5B;
+    text-transform: uppercase;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      transition: 0.3s ease-in;
+      color: #E85F5B !important;
+    }
+  }

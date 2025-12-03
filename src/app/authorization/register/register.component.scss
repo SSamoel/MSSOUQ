@@ -1,0 +1,85 @@
+.registerationImage{
+    width: auto;
+    height: 100vh;
+}
+
+.img-side{
+  overflow: hidden;
+}
+
+mat-form-field{
+  width: 95%;
+}
+
+.mat-card-title {
+  color: #8682f7;
+  padding-top: 30px !important;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+
+mat-card {
+  margin: 0px 50px;
+  box-shadow: none;
+}
+.reg-button{
+  margin-top: 40px !important;
+}
+
+.row{
+    margin: 0px !important;
+}
+
+.row > * {
+    padding: 0px;
+}
+
+
+.mat-button {
+  background-color: #8682f7;
+  color: #fff !important;
+  width: auto;
+  cursor: pointer !important;
+  letter-spacing: 2px;
+  font-size: 15px;
+  border: 1px solid #8682f7;
+  text-transform: uppercase;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    transition: 0.3s ease-in;
+    color: #8682f7 !important;
+  }
+}
+
+.registerationImage{
+    width: auto;
+    height: 100vh;
+}
+
+.img-side{
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .registerationImage{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .registerationImage{
+    display: none;
+  }
+  .mat-card{
+    margin: 25px !important;
+  }
+}
+@media screen and (min-width: 768px )and (max-width:903px) {
+  .mat-card{
+    margin: 0px !important;
+  }
+}
+

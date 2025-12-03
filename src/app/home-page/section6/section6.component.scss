@@ -1,0 +1,40 @@
+h3{
+    
+    line-height:48px;
+    font-size: 38px;
+    font-weight: 500 !important;
+
+}
+img{
+    height: 250px;
+    min-height: 100%;
+}
+
+li{
+    display: inline-block;
+}
+@media screen and (max-width: 480px) {
+    .sec{
+        padding-bottom: 30px;
+    }
+    img {
+        width: 100%;
+        min-height: 100%;
+    }
+   
+    h3{
+        font-size: 25px;
+    }
+    h6.text-primary{
+        font-size: 17px;
+    }
+    h5{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 992px) {
+    h6.text-primary{
+        font-size: 13px;
+    }
+}

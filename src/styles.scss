@@ -1,0 +1,82 @@
+
+
+
+
+
+
+
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$MS_SOUQ-primary: mat.define-palette(mat.$indigo-palette);
+$MS_SOUQ-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$MS_SOUQ-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$MS_SOUQ-theme: mat.define-light-theme((
+  color: (
+    primary: $MS_SOUQ-primary,
+    accent: $MS_SOUQ-accent,
+    warn: $MS_SOUQ-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($MS_SOUQ-theme);
+
+/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+html, body { height: 100%; }
+body { margin: 0; font-family: "cairo" !important }
+
+.logoImage{
+  max-width: 150px;
+}
+
+.mat-typography h3 {
+  font: 400 20px/28px cairo-bolder;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+}
+
+@media screen and (max-width: 480px) {
+
+  h3{
+      font-size: 25px;
+      line-height: 35px !important;
+  }
+  
+}
+
+@font-face {
+  font-family: "cairo";
+  src: local("cairo"), url(./assets/fonts/Cairo/Cairo-VariableFont_wght.ttf) format("truetype");
+}
+
+
+@font-face {
+  font-family: "cairo-bolder";
+  src: local("cairo-bolder"), url(./assets/fonts/Cairo/static/Cairo-Bold.ttf) format("truetype");
+}
+
+*[dir="rtl"]{
+  .me-2 {
+    margin-left: 0.5rem !important;
+  }
+}

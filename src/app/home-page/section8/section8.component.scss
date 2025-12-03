@@ -1,0 +1,28 @@
+.lastsection{
+    background-image:url("/src/assets/images/background.jpg");
+}
+.main-btn{
+    padding: 10px 36px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+    border-radius: 35px;
+    background-color: #035E80;
+    border: 2px solid transparent;
+    color: #fff;
+    box-shadow: 8px 8px 18px 0 rgba(11, 30, 136, 0.3);
+}
+@media screen and (max-width: 480px) {
+   
+    h3{
+        font-size: 25px;
+
+    }
+    .main-btn{
+        padding: 5px 20px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;  
+    }
+}

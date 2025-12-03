@@ -1,0 +1,47 @@
+/// Navigation Variables
+$nav-background: rgb(255, 253, 253)
+;
+// Start Navbar
+
+body{
+  height: 10000px;
+}
+.shadow-header{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+}
+
+
+.navbar {
+  background: $nav-background;
+   a{
+  color: #E85F5B;
+  &.active ,&:focus,&:hover{
+  color: #be4844;
+  transition: 0.3s ease-in;
+  font-weight: bold;
+  }
+  }
+  .navbar-toggler{
+    color: rgb(20, 20, 20);
+    font-size: 25px;
+    &:focus{
+      box-shadow: none;
+    }
+  }
+
+  .main-btn{
+    color: white;
+    font-weight:bolder ;
+    background-color: #E85F5B ;
+    box-shadow: 8px 8px 18px 0 rgb(254 76 28 / 30%);
+
+    &:focus,&:hover{
+      color: white;
+    }
+  }
+}
+
+
+
+// End Navbar
+

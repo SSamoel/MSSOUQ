@@ -1,0 +1,53 @@
+.section1Image{
+    width: 100%;
+}
+span{
+    color: #FDD688;
+}
+h3{
+    line-height:62px;
+    font-size: 52px;
+    font-weight: 8000 !important;
+}
+.into-content{
+    font-size: 20px;
+}
+.sperator{
+    border-bottom: 4px solid #FDD688;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 6px 0 24px 0;
+    width: 80px;
+}
+
+.main-btn{
+    padding: 10px 36px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    border-radius: 35px;
+    background-color: #035E80;
+    border: 2px solid transparent;
+    color: #fff;
+    box-shadow: 8px 8px 18px 0 rgba(11, 30, 136, 0.3);
+    &:focus,&:hover{
+        transition: 0.3s ease-in;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    h3{
+        font-size: 25px;
+    }
+    .main-btn{
+        padding: 5px 20px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;  
+    }
+    
+}
+

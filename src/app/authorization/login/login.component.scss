@@ -1,0 +1,86 @@
+.loginImage {
+   width: auto;
+    height: 100vh;
+
+}
+
+.img-side {
+  overflow: hidden;
+}
+
+
+
+  .mat-card-title {
+    padding-top: 30px !important;
+  }
+
+  .mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+  }
+
+  mat-card {
+    margin: 30px 100px;
+    box-shadow: none;
+  }
+  .img-side{
+    overflow: hidden;
+
+  }
+
+  .row{
+      margin: 0px !important;
+  }
+
+  .row > * {
+      padding: 0px;
+  }
+
+  .mat-button {
+    background-color: #E85F5B;
+    color: #fff !important;
+    width: auto;
+    cursor: pointer !important;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border: 1px solid #E85F5B;
+    text-transform: uppercase;
+    margin-top: 50px;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      transition: 0.3s ease-in;
+      color: #E85F5B !important;
+    }
+  }
+
+  .loginImage{
+
+      width: auto;
+      width: 100%;
+  }
+  a{
+    text-decoration: none;
+  }
+  @media screen and (max-width: 480px) {
+    .loginImage{
+      display: none;
+    }
+    .mat-card{
+      margin: 10px;
+    }
+
+  }
+  @media screen and (max-width: 767px) {
+    .loginImage{
+      display: none;
+    }
+    .mat-card{
+      margin: 35px !important;
+    }
+
+  }
+  @media screen and (min-width: 768px) and (max-width : 1085px){
+    .mat-card{
+      margin: 15px;
+    }
+  }
